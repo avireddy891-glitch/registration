@@ -1,4 +1,4 @@
-<html>
+<html
 <head>
     <title>Registration Form</title>
 
@@ -32,6 +32,7 @@
             width:auto;
         }
 
+
         input[type="submit"]{
             background-color:green;
             color:white;
@@ -48,73 +49,25 @@
             cursor:pointer;
         }
 
-        #success{
-            text-align:center;
-            color:green;
-            font-weight:bold;
-            margin-top:10px;
-        }
-    </style>
-</head>
-
-<body>
-
-<form onsubmit="return register()">
-
-    <h2>Registration Form</h2>
-
-    Name:<br>
-    <input type="text" id="name" required><br>
-
-    Roll No:<br>
-    <input type="text" id="roll" required><br>
-
-    Phone:<br>
-    <input type="text" id="phone" required><br>
-
-    Email:<br>
-    <input type="email" id="email" required><br>
-
-    Password:<br>
-    <input type="password" id="password" required><br>
-
-    Gender:<br>
-    <input type="radio" name="gender" required> Male
-    <input type="radio" name="gender"> Female
-
-    <br><br>
-
-    <input type="submit" value="Register">
-    <input type="reset" value="Reset" onclick="clearMessage()">
-
-    <p id="success"></p>
-
-</form>
-
-<script>
-function register()
-{
-    let phone = document.getElementById("phone").value;
-    let password = document.getElementById("password").value;
-
-    if(phone.length >= 10 && password.length >= 6)
-    {
-        document.getElementById("success").innerHTML =
-        "Registered Successfully!";
-        return false;
-    }
-    else
-    {
-        alert("Please enter valid details");
-        return false;
-    }
-}
-
-function clearMessage()
-{
-    document.getElementById("success").innerHTML = "";
-}
+        #success
+{ text-align:center; color:green; font-weight:bold; margin-top:10px; } </style> </head> <body> <form onsubmit="return register()"> <h2>Registration Form</h2> Name:<br> <input type="text" id="name" required><br> Roll No:<br> <input type="text" id="roll" required><br> Phone:<br> <input type="text" id="phone" required><br>
+Alternate Phone Number:<br>
+    <input type="text" id="altphone" maxlength="10"><br>
+ Email:<br> <input type="email" id="email" required><br> 
+Password:<br> <input type="password" id="password" required><br>
+ Gender:<br> <input type="radio" name="gender" required> Male 
+<input type="radio" name="gender"> Female <br><br> 
+<input type="submit" value="Register"> 
+<input type="reset" value="Reset" 
+onclick="clearMessage()"> 
+<p id="success"></p>
+ </form> <script> function register() { let phone = document.getElementById("phone").value;
+ let password = document.getElementById("password").value;
+ if(phone.length >= 10 && password.length >= 6) {
+ document.getElementById("success").innerHTML = "Registered Successfully!"; return false;
+ } else { alert("Please enter valid details"); return false;
+ } } function clearMessage() { 
+document.getElementById("success").innerHTML = ""; } 
 </script>
-
-</body>
-</html>
+ </body>
+ </html>
