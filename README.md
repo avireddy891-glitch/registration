@@ -8,7 +8,7 @@
 
 ## 📖 About
 
-A simple and responsive **Registration Form** built using **HTML**, **CSS**, and **JavaScript**.
+A simple and responsive **User Registration Form** built using **HTML**, **CSS**, and **JavaScript**.
 
 The project demonstrates:
 - Form creation using HTML
